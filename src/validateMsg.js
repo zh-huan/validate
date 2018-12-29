@@ -42,7 +42,7 @@ class ErrorBag {
 
     get(name) {
         let error = this.errors.filter(item => item.name === name);
-        return error && error.length?error[0] : null;
+        return error && error.length?error[0].msg : null;
     }
 
     has(name) {

@@ -44,7 +44,6 @@ class validateUtil {
       let types=Object.keys(binding.modifiers)
       types&&types.length&&(vaType=types[0]);
     }
-    console.log(vaType);
     switch (vaType) {
       case "change":
         this.change(el, binding, vnode, oldnode, validate);
